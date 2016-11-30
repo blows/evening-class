@@ -1,0 +1,19 @@
+// main.scss
+
+@import 'reset';
+
+$blue: hsla(240, 100%, 50%, 1);
+$white: hsla(360, 100%, 100%, 1);
+$black: hsla(0, 0%, 0%, 1);
+
+$background: $white;
+$body: $black;
+$header: $blue;
+$link: $blue;
+$nav: $blue;
+$nav-home: $white;
+$title: $blue;
+$cat: $black;
+$line: $blue;
+
+@import 'universal';

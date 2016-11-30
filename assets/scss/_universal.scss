@@ -1,0 +1,436 @@
+@import 'reset';
+
+@font-face {
+  font-family: 'texgyreheroscn-regular';
+  src: url('../fonts/texgyreheroscn-regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+$line-width: .2rem;
+
+// Pix ==============================================================================================================
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+// Text ==============================================================================================================
+p, ul li, footer {
+    font-size: 1.3rem;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-style: normal;
+    color: $body;
+}
+
+h1, h2, h3, h4 {
+  font-size: 1.3rem;
+  line-height: 1.25em;
+  margin-bottom: .5em;
+  font-weight: 400;
+  font-style: normal;
+  color: $header;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+}
+
+// Links ==============================================================================================================
+a {
+  color: $link;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+// Clearfix ==============================================================================================================
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  font-family: 'texgyreheroscn-regular', sans-serif;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 100%;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased; */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+  overflow: auto;
+    // margin: 0 0 60px; /* bottom = footer height */
+    background-color: $background;
+}
+
+
+// Navigation ==============================================================================================================
+
+header#navigation {
+  padding-top: 1em;
+  padding-bottom: 1.3em;
+
+  h1 a {
+    color: $nav;
+  }
+}
+
+div.fixed-top {
+  position: fixed;
+  right: 1em;
+  left: 1em;
+  z-index: 1030;
+}
+
+nav#main ul li {
+  padding-left: 1.5em;
+}
+
+nav#main ul li a {
+  color: $nav;
+}
+
+nav#main {
+  float: right;
+}
+
+header h1, nav#main, nav#main ul, nav#main ul li, nav#main ul li a {
+  display: inline-block;
+}
+
+
+// Home ==============================================================================================================
+
+#home nav#main ul li a, #home h1 a {
+  color: $nav-home;
+}
+
+div#homeImage {
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+}
+
+// A-Z Filters - Categories and Tags List ==============================================================================================================
+
+#archives header, #archives ul, #archives section, #tags header h2, #tags ul, #categories header h2, #categories ul {
+  display: inline;
+}
+
+#archives ul li, #tags ul li, #categories ul li {
+  display: inline-block;
+}
+
+#archives ul li a, #tags ul li a {
+  text-decoration: underline;
+  color: $cat;
+}
+
+#archives {
+  p, ul li, h2 { margin-bottom: 0em; }
+}
+
+#archives h2 {
+  color: $title;
+}
+
+section#archives {
+  margin-bottom: 1.5em;
+}
+
+section#description p {
+  margin-bottom: 0em;
+  color: $title;
+}
+
+
+// A-Z Posts and Post ==============================================================================================================
+
+.az-column, article.item { width: 100%; }
+.az-gutter { width: 4%; }
+
+@media (min-width: 768px) {
+  .az-column, article.item { width: 24.25%; }
+  .az-gutter { width: 1%; }
+}
+
+section#posts, section#post, section#about {
+  border-top: $line-width solid $line;
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+
+article {
+  max-width: 60em;
+  margin: auto;
+}
+
+article.item {
+  border-bottom: $line-width solid $line;
+  padding-bottom: 1em;
+}
+
+article h2 {
+  margin-bottom: 0;
+  color: $cat;
+}
+
+article header h1 {
+  color: $title;
+}
+
+section#about h1 {
+  color: $header;
+}
+
+article footer, section#post, section#about p {
+  color: $body;
+}
+
+section#post p {
+  color: $body;
+}
+
+section#post div.tags ul, section#post div.tags ul li {
+  display: inline;
+}
+
+nav#pager {
+  padding-top: 1em;
+  text-align: center;
+}
+
+nav#pager ul li {
+  display: inline-block;
+}
+
+nav#pager ul li, nav#pager ul li a {
+  color: $nav;
+}
+
+#previous-post {
+  float:right;
+}
+
+#next-post {
+  float: left;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    width: 50%;
+}
+
+div.carousel-indicators-numbers {
+  padding-top: 1em;
+}
+
+footer div.tags {
+  padding-top: 1em;
+}
+
+
+
+
+// A-Z Pagination Navigation ==============================================================================================================
+
+nav#pagination {
+  text-align: center;
+}
+
+nav#pagination ul li {
+  display: inline-block;
+}
+
+nav#pagination ul li, nav#pagination ul li a {
+  color: $nav;
+}
+
+#pagination-prev {
+  float:left;
+}
+
+#pagination-next {
+  float: right;
+}
+
+// About ==============================================================================================================
+
+.about-section {
+  margin-bottom: 1em;
+}
+
+section#about h1 {
+  margin-bottom: 0;
+}
+
+// #about .row {
+//   max-width: 60em;
+//   margin: auto;
+// }
+
+#about h1 + p {
+  text-indent: 0 !important;
+  margin-bottom: 0;
+}
+
+#about p {
+  text-indent: 5%;
+  margin-bottom: 0;
+}
+
+#mc_embed_signup {
+  clear:left;
+  font-size: 1rem;
+}
+
+.mc-field-group {
+  display: inline;
+}
+
+.button {
+  display: inline;
+}
+
+.button input {
+  background-color: $header;
+  color: $white;
+  padding: 4px;
+  border: 0 none;
+  height: 27px;
+}
+
+input#mce-EMAIL {
+  text-indent: 2%;
+  height: 27px;
+  line-height: 1rem;
+}
+
+// Night Styles ==============================================================================================================
+
+div#coverimage {
+  border: 1px solid $line;
+  background-color: $blue;
+  margin-bottom: 0.5em;
+}
+
+div#coverimage > img {
+  mix-blend-mode: multiply;
+  transition: background-color .3s ease-in-out;
+}
+
+div#coverimage > img:hover {
+  mix-blend-mode: normal;
+}
+
+// CLOCK ==============================================================================================================
+
+$radius: 80/16*1em;
+$stroke-width: 16/16*.18em;
+$stroke-colour: $blue;
+$clock-shadow: hsla(0, 0%, 50%, 0.65);
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+.clock-window {
+	border: $stroke-width $stroke-colour solid;
+  background-color: $white;
+	display: inline-block;
+	height: $radius*2.55;
+	width: $radius*2.55;
+	position: absolute;
+	// right: 10%;
+	// bottom: 10%;
+	z-index: 100;
+  @include box-shadow(10px, 10px, 0, $clock-shadow);
+}
+
+.clock-window:hover {
+  cursor: move;
+}
+
+#clock-hide {
+	position: absolute;
+	right: 0;
+	height: 2em;
+	width: 1.5em;
+
+	i {
+		font-size: 2em;
+		color: $stroke-colour;
+	}
+}
+
+.clock {
+	margin: $radius/4;
+	padding: 0;
+	text-align: left;
+	text-indent: -999px;
+	position: relative;
+	overflow: hidden;
+	display: inline-block; *display:inline; zoom:1;
+	height: $radius * 2;
+	width: $radius * 2;
+	border: $stroke-width solid $stroke-colour;
+	border-radius: $radius + $stroke-width * 2;
+	background: $white url(http://www.evening-class.org/ec-clock.svg) no-repeat center;
+	background-size: 88%;
+
+	i {
+		font-style: normal;
+	}
+
+	.hour-hand,
+	.minute-hand {
+		position: absolute;
+		bottom: $radius - $stroke-width / 2;
+		left: $radius - $stroke-width / 2; //50%;
+
+		content: "";
+		background: $stroke-colour;
+		border-radius: $stroke-width;
+		width: $stroke-width;
+		height: $radius * 0.9;
+
+		-ms-transform-origin: 	  50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
+		-webkit-transform-origin: 50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
+		transform-origin: 		  50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
+
+  -webkit-transition: all 1s;
+		-moz-transition: 	all 1s;
+		-ms-transition: 	all 1s;
+		-o-transition: 		all 1s;
+		transition: 		all 1s;
+	}
+	.hour-hand {
+		height: $radius * 0.6;
+		-ms-transform-origin: 	  50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
+		-webkit-transform-origin: 50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
+		transform-origin: 		  50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
+	}
+}

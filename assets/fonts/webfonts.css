@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'aktiv_grotesk_corpregular';
+    src: url('aktivgrotesk_corp_rg.eot');
+    src: url('aktivgrotesk_corp_rg.eot?#iefix') format('embedded-opentype'),
+         url('aktivgrotesk_corp_rg.woff2') format('woff2'),
+         url('aktivgrotesk_corp_rg.woff') format('woff'),
+         url('aktivgrotesk_corp_rg.ttf') format('truetype'),
+         url('aktivgrotesk_corp_rg.svg#aktiv_grotesk_corpregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

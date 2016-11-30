@@ -1,0 +1,9 @@
+Title: Home
+
+----
+
+Text: You're home.
+
+----
+
+Homeimage: ecmuckers4lyf.jpg

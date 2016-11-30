@@ -1,0 +1,25 @@
+Title: Fontlab Skill Share
+
+----
+
+Date: 2016-07-06
+
+----
+
+Author: chris
+
+----
+
+Coverimage: 03.png
+
+----
+
+Category: event
+
+----
+
+Tags: Skill-share
+
+----
+
+Text: The first of many skill sharing workshops; Olya Troitskaya's introduction to Fontlab.
