@@ -1,4 +1,4 @@
-@import 'reset';
+@import 'compass';
 
 @font-face {
   font-family: 'texgyreheroscn-regular';
@@ -113,7 +113,6 @@ header h1, nav#main, nav#main ul, nav#main ul li, nav#main ul li a {
 
 
 // Home ==============================================================================================================
-
 #home nav#main ul li a, #home h1 a {
   color: $nav-home;
 }
@@ -127,7 +126,6 @@ div#homeImage {
 }
 
 // A-Z Filters - Categories and Tags List ==============================================================================================================
-
 #archives header, #archives ul, #archives section, #tags header h2, #tags ul, #categories header h2, #categories ul {
   display: inline;
 }
@@ -294,13 +292,21 @@ section#about h1 {
   margin-bottom: 0;
 }
 
+// MC Newsletter Singup
 #mc_embed_signup {
   clear:left;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  h2 {
+    margin-bottom: .2em;
+  }
 }
 
 .mc-field-group {
   display: inline;
+}
+
+.sign-up-bar{
+  font-size: 1.2rem;
 }
 
 .button {
@@ -308,17 +314,25 @@ section#about h1 {
 }
 
 .button input {
-  background-color: $header;
-  color: $white;
+  background-color: $flip;
+  color: $flop;
   padding: 4px;
-  border: 0 none;
-  height: 27px;
+  height: 2.1em;
+  border: 0.2rem $flip solid;
+}
+
+.button input:hover {
+  background-color: $flop;
+  color: $flip;
+  border: 0.2rem $flop solid;
 }
 
 input#mce-EMAIL {
   text-indent: 2%;
-  height: 27px;
+  height: 2.1em;
+  width: 15em;
   line-height: 1rem;
+  border: 0.2rem $flip solid;
 }
 
 // Night Styles ==============================================================================================================
@@ -338,8 +352,56 @@ div#coverimage > img:hover {
   mix-blend-mode: normal;
 }
 
-// CLOCK ==============================================================================================================
+// NEWSLETTER FOOTER =============================================================
+footer.footer {
+  display: none;
+  width: 100vw;
+  margin-bottom: 0;
+  background-color: $line;
+}
+.newsletter {
+  @include display-flex;
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  height: 25vh;
+  text-align: center;
+  h2 {
+    color: $flip;
+  }
+  #mc_embed_signup {
+    padding-bottom: 2em;
+    .button input {
+       background-color: $flip;
+       color: $flop;
+       position: inherit;
+     }
+     .button input:hover {
+       background-color: $flop;
+       color: $flip;
+       border: 0.2rem $flip solid;
+     }
+     input#mce-EMAIL {
+       color: $flip;
+     }
+  }
+}
 
+.social-buttons {
+  display: inline-block;
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+        a {
+          color: $flip;
+          padding: .6em;
+        }
+    }
+  }
+}
+
+// CLOCK ==============================================================================================================
 $radius: 80/16*1em;
 $stroke-width: 16/16*.18em;
 $stroke-colour: $blue;

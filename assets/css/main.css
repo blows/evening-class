@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,121 +15,111 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
-body {
-  line-height: 1; }
-
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
-body {
-  line-height: 1; }
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
 
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
 
 @font-face {
   font-family: 'texgyreheroscn-regular';
-  src: url("../fonts/texgyreheroscn-regular.woff") format("woff"); }
+  src: url("../fonts/texgyreheroscn-regular.woff") format("woff");
+}
+/* line 11, ../scss/_universal.scss */
 img {
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 18, ../scss/_universal.scss */
 p, ul li, footer {
   font-size: 1.3rem;
   line-height: 1.25em;
   margin-bottom: 1em;
   font-weight: 400;
   font-style: normal;
-  color: black; }
+  color: black;
+}
 
+/* line 27, ../scss/_universal.scss */
 h1, h2, h3, h4 {
   font-size: 1.3rem;
   line-height: 1.25em;
   margin-bottom: .5em;
   font-weight: 400;
   font-style: normal;
-  color: blue; }
+  color: blue;
+}
 
+/* line 36, ../scss/_universal.scss */
 h1 a, h2 a, h3 a, h4 a {
   color: inherit;
-  border: 0 !important; }
+  border: 0 !important;
+}
 
+/* line 42, ../scss/_universal.scss */
 a {
   color: blue;
   text-decoration: none;
-  transition: color .3s, background .3s, border .3s; }
+  transition: color .3s, background .3s, border .3s;
+}
 
+/* line 47, ../scss/_universal.scss */
 a:hover {
   color: inherit;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
+/* line 53, ../scss/_universal.scss */
 .cf:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
+/* line 59, ../scss/_universal.scss */
 html, body {
   font-family: 'texgyreheroscn-regular', sans-serif;
   font-size: 1.1rem;
@@ -140,206 +127,403 @@ html, body {
   height: 100%;
   /* -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased; */ }
+  -o-font-smoothing: antialiased; */
+}
 
+/* line 69, ../scss/_universal.scss */
 html {
   position: relative;
-  min-height: 100%; }
+  min-height: 100%;
+}
 
+/* line 73, ../scss/_universal.scss */
 body {
   overflow: auto;
-  background-color: white; }
+  background-color: white;
+}
 
+/* line 82, ../scss/_universal.scss */
 header#navigation {
   padding-top: 1em;
-  padding-bottom: 1.3em; }
-  header#navigation h1 a {
-    color: blue; }
+  padding-bottom: 1.3em;
+}
+/* line 86, ../scss/_universal.scss */
+header#navigation h1 a {
+  color: blue;
+}
 
+/* line 91, ../scss/_universal.scss */
 div.fixed-top {
   position: fixed;
   right: 1em;
   left: 1em;
-  z-index: 1030; }
+  z-index: 1030;
+}
 
+/* line 98, ../scss/_universal.scss */
 nav#main ul li {
-  padding-left: 1.5em; }
+  padding-left: 1.5em;
+}
 
+/* line 102, ../scss/_universal.scss */
 nav#main ul li a {
-  color: blue; }
+  color: blue;
+}
 
+/* line 106, ../scss/_universal.scss */
 nav#main {
-  float: right; }
+  float: right;
+}
 
+/* line 110, ../scss/_universal.scss */
 header h1, nav#main, nav#main ul, nav#main ul li, nav#main ul li a {
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 116, ../scss/_universal.scss */
 #home nav#main ul li a, #home h1 a {
-  color: white; }
+  color: white;
+}
 
+/* line 120, ../scss/_universal.scss */
 div#homeImage {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0px;
-  left: 0px; }
+  left: 0px;
+}
 
+/* line 129, ../scss/_universal.scss */
 #archives header, #archives ul, #archives section, #tags header h2, #tags ul, #categories header h2, #categories ul {
-  display: inline; }
+  display: inline;
+}
 
+/* line 133, ../scss/_universal.scss */
 #archives ul li, #tags ul li, #categories ul li {
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 137, ../scss/_universal.scss */
 #archives ul li a, #tags ul li a {
   text-decoration: underline;
-  color: black; }
+  color: black;
+}
 
+/* line 143, ../scss/_universal.scss */
 #archives p, #archives ul li, #archives h2 {
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+}
 
+/* line 146, ../scss/_universal.scss */
 #archives h2 {
-  color: blue; }
+  color: blue;
+}
 
+/* line 150, ../scss/_universal.scss */
 section#archives {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
+/* line 154, ../scss/_universal.scss */
 section#description p {
   margin-bottom: 0em;
-  color: blue; }
+  color: blue;
+}
 
+/* line 162, ../scss/_universal.scss */
 .az-column, article.item {
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 163, ../scss/_universal.scss */
 .az-gutter {
-  width: 4%; }
+  width: 4%;
+}
 
 @media (min-width: 768px) {
+  /* line 166, ../scss/_universal.scss */
   .az-column, article.item {
-    width: 24.25%; }
+    width: 24.25%;
+  }
 
+  /* line 167, ../scss/_universal.scss */
   .az-gutter {
-    width: 1%; } }
+    width: 1%;
+  }
+}
+/* line 170, ../scss/_universal.scss */
 section#posts, section#post, section#about {
   border-top: 0.2rem solid blue;
   padding-top: 2em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+}
 
+/* line 176, ../scss/_universal.scss */
 article {
   max-width: 60em;
-  margin: auto; }
+  margin: auto;
+}
 
+/* line 181, ../scss/_universal.scss */
 article.item {
   border-bottom: 0.2rem solid blue;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+}
 
+/* line 186, ../scss/_universal.scss */
 article h2 {
   margin-bottom: 0;
-  color: black; }
+  color: black;
+}
 
+/* line 191, ../scss/_universal.scss */
 article header h1 {
-  color: blue; }
+  color: blue;
+}
 
+/* line 195, ../scss/_universal.scss */
 section#about h1 {
-  color: blue; }
+  color: blue;
+}
 
+/* line 199, ../scss/_universal.scss */
 article footer, section#post, section#about p {
-  color: black; }
+  color: black;
+}
 
+/* line 203, ../scss/_universal.scss */
 section#post p {
-  color: black; }
+  color: black;
+}
 
+/* line 207, ../scss/_universal.scss */
 section#post div.tags ul, section#post div.tags ul li {
-  display: inline; }
+  display: inline;
+}
 
+/* line 211, ../scss/_universal.scss */
 nav#pager {
   padding-top: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 216, ../scss/_universal.scss */
 nav#pager ul li {
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 220, ../scss/_universal.scss */
 nav#pager ul li, nav#pager ul li a {
-  color: blue; }
+  color: blue;
+}
 
+/* line 224, ../scss/_universal.scss */
 #previous-post {
-  float: right; }
+  float: right;
+}
 
+/* line 228, ../scss/_universal.scss */
 #next-post {
-  float: left; }
+  float: left;
+}
 
+/* line 232, ../scss/_universal.scss */
 .carousel-control.right, .carousel-control.left {
   background-image: none;
-  width: 50%; }
+  width: 50%;
+}
 
+/* line 237, ../scss/_universal.scss */
 div.carousel-indicators-numbers {
-  padding-top: 1em; }
+  padding-top: 1em;
+}
 
+/* line 241, ../scss/_universal.scss */
 footer div.tags {
-  padding-top: 1em; }
+  padding-top: 1em;
+}
 
+/* line 250, ../scss/_universal.scss */
 nav#pagination {
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 254, ../scss/_universal.scss */
 nav#pagination ul li {
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 258, ../scss/_universal.scss */
 nav#pagination ul li, nav#pagination ul li a {
-  color: blue; }
+  color: blue;
+}
 
+/* line 262, ../scss/_universal.scss */
 #pagination-prev {
-  float: left; }
+  float: left;
+}
 
+/* line 266, ../scss/_universal.scss */
 #pagination-next {
-  float: right; }
+  float: right;
+}
 
+/* line 272, ../scss/_universal.scss */
 .about-section {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
+/* line 276, ../scss/_universal.scss */
 section#about h1 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 285, ../scss/_universal.scss */
 #about h1 + p {
   text-indent: 0 !important;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 290, ../scss/_universal.scss */
 #about p {
   text-indent: 5%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 296, ../scss/_universal.scss */
 #mc_embed_signup {
   clear: left;
-  font-size: 1rem; }
+  font-size: 1.1rem;
+}
+/* line 299, ../scss/_universal.scss */
+#mc_embed_signup h2 {
+  margin-bottom: .2em;
+}
 
+/* line 304, ../scss/_universal.scss */
 .mc-field-group {
-  display: inline; }
+  display: inline;
+}
 
+/* line 308, ../scss/_universal.scss */
+.sign-up-bar {
+  font-size: 1.2rem;
+}
+
+/* line 312, ../scss/_universal.scss */
 .button {
-  display: inline; }
+  display: inline;
+}
 
+/* line 316, ../scss/_universal.scss */
 .button input {
+  background-color: white;
+  color: blue;
+  padding: 4px;
+  height: 2.1em;
+  border: 0.2rem white solid;
+}
+
+/* line 324, ../scss/_universal.scss */
+.button input:hover {
   background-color: blue;
   color: white;
-  padding: 4px;
-  border: 0 none;
-  height: 27px; }
+  border: 0.2rem blue solid;
+}
 
+/* line 330, ../scss/_universal.scss */
 input#mce-EMAIL {
   text-indent: 2%;
-  height: 27px;
-  line-height: 1rem; }
+  height: 2.1em;
+  width: 15em;
+  line-height: 1rem;
+  border: 0.2rem white solid;
+}
 
+/* line 340, ../scss/_universal.scss */
 div#coverimage {
   border: 1px solid blue;
   background-color: blue;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+}
 
+/* line 346, ../scss/_universal.scss */
 div#coverimage > img {
   mix-blend-mode: multiply;
-  transition: background-color .3s ease-in-out; }
+  transition: background-color .3s ease-in-out;
+}
 
+/* line 351, ../scss/_universal.scss */
 div#coverimage > img:hover {
-  mix-blend-mode: normal; }
+  mix-blend-mode: normal;
+}
 
+/* line 356, ../scss/_universal.scss */
+footer.footer {
+  display: none;
+  width: 100vw;
+  margin-bottom: 0;
+  background-color: blue;
+}
+
+/* line 362, ../scss/_universal.scss */
+.newsletter {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 25vh;
+  text-align: center;
+}
+/* line 369, ../scss/_universal.scss */
+.newsletter h2 {
+  color: white;
+}
+/* line 372, ../scss/_universal.scss */
+.newsletter #mc_embed_signup {
+  padding-bottom: 2em;
+}
+/* line 374, ../scss/_universal.scss */
+.newsletter #mc_embed_signup .button input {
+  background-color: white;
+  color: blue;
+  position: inherit;
+}
+/* line 379, ../scss/_universal.scss */
+.newsletter #mc_embed_signup .button input:hover {
+  background-color: blue;
+  color: white;
+  border: 0.2rem white solid;
+}
+/* line 384, ../scss/_universal.scss */
+.newsletter #mc_embed_signup input#mce-EMAIL {
+  color: white;
+}
+
+/* line 390, ../scss/_universal.scss */
+.social-buttons {
+  display: inline-block;
+}
+/* line 392, ../scss/_universal.scss */
+.social-buttons ul {
+  display: inline-block;
+}
+/* line 394, ../scss/_universal.scss */
+.social-buttons ul li {
+  display: inline-block;
+}
+/* line 396, ../scss/_universal.scss */
+.social-buttons ul li a {
+  color: white;
+  padding: .6em;
+}
+
+/* line 422, ../scss/_universal.scss */
 .clock-window {
   border: 0.18em blue solid;
   background-color: white;
@@ -350,20 +534,28 @@ div#coverimage > img:hover {
   z-index: 100;
   -webkit-box-shadow: 10px 10px 0 rgba(128, 128, 128, 0.65);
   -moz-box-shadow: 10px 10px 0 rgba(128, 128, 128, 0.65);
-  box-shadow: 10px 10px 0 rgba(128, 128, 128, 0.65); }
+  box-shadow: 10px 10px 0 rgba(128, 128, 128, 0.65);
+}
 
+/* line 435, ../scss/_universal.scss */
 .clock-window:hover {
-  cursor: move; }
+  cursor: move;
+}
 
+/* line 439, ../scss/_universal.scss */
 #clock-hide {
   position: absolute;
   right: 0;
   height: 2em;
-  width: 1.5em; }
-  #clock-hide i {
-    font-size: 2em;
-    color: blue; }
+  width: 1.5em;
+}
+/* line 445, ../scss/_universal.scss */
+#clock-hide i {
+  font-size: 2em;
+  color: blue;
+}
 
+/* line 451, ../scss/_universal.scss */
 .clock {
   margin: 1.25em;
   padding: 0;
@@ -379,31 +571,36 @@ div#coverimage > img:hover {
   border: 0.18em solid blue;
   border-radius: 5.36em;
   background: white url(http://www.evening-class.org/ec-clock.svg) no-repeat center;
-  background-size: 88%; }
-  .clock i {
-    font-style: normal; }
-  .clock .hour-hand,
-  .clock .minute-hand {
-    position: absolute;
-    bottom: 4.91em;
-    left: 4.91em;
-    content: "";
-    background: blue;
-    border-radius: 0.18em;
-    width: 0.18em;
-    height: 4.5em;
-    -ms-transform-origin: 50% 4.41em;
-    -webkit-transform-origin: 50% 4.41em;
-    transform-origin: 50% 4.41em;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; }
-  .clock .hour-hand {
-    height: 3em;
-    -ms-transform-origin: 50% 2.91em;
-    -webkit-transform-origin: 50% 2.91em;
-    transform-origin: 50% 2.91em; }
-
-/*# sourceMappingURL=main.css.map */
+  background-size: 88%;
+}
+/* line 466, ../scss/_universal.scss */
+.clock i {
+  font-style: normal;
+}
+/* line 470, ../scss/_universal.scss */
+.clock .hour-hand,
+.clock .minute-hand {
+  position: absolute;
+  bottom: 4.91em;
+  left: 4.91em;
+  content: "";
+  background: blue;
+  border-radius: 0.18em;
+  width: 0.18em;
+  height: 4.5em;
+  -ms-transform-origin: 50% 4.41em;
+  -webkit-transform-origin: 50% 4.41em;
+  transform-origin: 50% 4.41em;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* line 492, ../scss/_universal.scss */
+.clock .hour-hand {
+  height: 3em;
+  -ms-transform-origin: 50% 2.91em;
+  -webkit-transform-origin: 50% 2.91em;
+  transform-origin: 50% 2.91em;
+}

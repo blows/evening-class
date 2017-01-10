@@ -15,11 +15,11 @@
   <?php echo js('assets/js/jquery-ui.min.js') ?>
   <?php echo js('assets/js/clock.js') ?>
   <?php echo js('assets/js/script.js') ?>
+  <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
   <script type="text/javascript">
-
   function getStylesheet() {
         var currentTime = new Date().getHours();
         if (0 <= currentTime&&currentTime < 7) {
@@ -32,14 +32,12 @@
          document.write("<link rel='stylesheet' href='/eveningclass/assets/css/night.css' type='text/css'>");
         }
   }
-
   getStylesheet();
 
   </script>
 
   <noscript><link href="/eveningclass/assets/css/day.css" rel="stylesheet"></noscript>
   </script>
-
   <!-- for development '/eveningclass/assets/css/day.css' but for uploads just '/assets/css/night.css' for live uploads  -->
 
 

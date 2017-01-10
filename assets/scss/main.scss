@@ -1,6 +1,6 @@
 // main.scss
 
-@import 'reset';
+@import 'compass/reset';
 
 $blue: hsla(240, 100%, 50%, 1);
 $white: hsla(360, 100%, 100%, 1);
@@ -15,5 +15,7 @@ $nav-home: $white;
 $title: $blue;
 $cat: $black;
 $line: $blue;
+$flip: $white;
+$flop: $blue;
 
 @import 'universal';

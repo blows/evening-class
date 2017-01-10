@@ -52,7 +52,24 @@ $('.clock-window').each(function(i,el){
 	});
 
 
+	// bulletin-window draggable
+	$(".bulletin-window").draggable({
+		containment: "body"
+	});
 
+	$('.bulletin-window').each(function(i,el){
+
+			var tLeft = Math.floor(Math.random()*70),
+					tTop  = Math.floor(Math.random()*70);
+
+			$(el).css({position:'absolute', left: tLeft+'%', top: tTop+'%'});
+
+	});
+
+	// news-window hidable
+		$("#bulletin-hide").click(function(){
+			$(".bulletin-window").hide();
+		});
 
 
 

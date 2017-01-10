@@ -5,20 +5,21 @@ $(function(){
   var limit   = parseInt(element.data('limit'));
   var offset  = limit;
 
-  $(window).scroll(function() { //detect page scroll
-      if($(window).scrollTop() + $(window).height() >= $(document).height()) { //if user scrolled to bottom of the page
+  $(window).scroll(function() { // detect page scroll
+      if($(window).scrollTop() + $(window).height() >= $(document).height()) { // if user scrolled to bottom of the page
         $.get(url, {limit: limit, offset: offset}, function(data) {
 
           if(data.more === false) {
-            $('.load-more').hide();
+            $('.footer').show();
           }
 
           var $container = $('#posts').packery({ itemSelector: '.item' });
           var $html = $( data.html );
-          $container.append( $html );
-          $container.packery( 'appended', $html );
-          $container.packery( 'layout' );
 
+          $('element').imagesLoaded( function() { // only apply Packery once images loaded
+            element.append( $html )
+            .packery( 'appended', $html );
+          });
 
           offset += limit;
 
