@@ -6,7 +6,7 @@
 							<div id="mc_embed_signup">
 							<form action="//evening-class.us14.list-manage.com/subscribe/post?u=4a0ffd44bb6102249bf42f1f2&amp;id=9da9e33e28" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							    <div id="mc_embed_signup_scroll">
-								<h2>Subscribe to receive our irregular newsletter with updates on events and general information:</h2>
+								<h2>Subscribe to our irregular newsletter to receive updates on events and general information:</h2>
 								<div class="sign-up-bar">
 									<div class="mc-field-group">
 										<label for="mce-EMAIL" style="display:none">Email Address</label>

@@ -76,6 +76,101 @@ body {
     background-color: $background;
 }
 
+// CLOCK ==============================================================================================================
+$radius: 80/16*1em;
+$stroke-width: 16/16*.18em;
+$stroke-colour: $blue;
+$clock-shadow: hsla(0, 0%, 50%, 0.65);
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+.clock-window {
+	border: $stroke-width $stroke-colour solid;
+  background-color: $white;
+	display: inline-block;
+	height: $radius*2.55;
+	width: $radius*2.55;
+	position: absolute;
+	// right: 10%;
+	// bottom: 10%;
+	z-index: 100;
+  @include box-shadow(10px, 10px, 0, $clock-shadow);
+}
+
+.clock-window:hover {
+  cursor: move;
+}
+
+#clock-hide {
+	position: absolute;
+	right: 0;
+	height: 2em;
+	width: 1.5em;
+
+	i {
+		font-size: 2em;
+		color: $stroke-colour;
+	}
+}
+
+.clock {
+	margin: $radius/4;
+	padding: 0;
+	text-align: left;
+	text-indent: -999px;
+	position: relative;
+	overflow: hidden;
+	display: inline-block; *display:inline; zoom:1;
+	height: $radius * 2;
+	width: $radius * 2;
+	border: $stroke-width solid $stroke-colour;
+	border-radius: $radius + $stroke-width * 2;
+	background: $white url(http://www.evening-class.org/ec-clock.svg) no-repeat center;
+	background-size: 88%;
+
+	i {
+		font-style: normal;
+	}
+
+	.hour-hand,
+	.minute-hand {
+		position: absolute;
+		bottom: $radius - $stroke-width / 2;
+		left: $radius - $stroke-width / 2; //50%;
+
+		content: "";
+		background: $stroke-colour;
+		border-radius: $stroke-width;
+		width: $stroke-width;
+		height: $radius * 0.9;
+
+		-ms-transform-origin: 	  50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
+		-webkit-transform-origin: 50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
+		transform-origin: 		  50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
+
+  -webkit-transition: all 1s;
+		-moz-transition: 	all 1s;
+		-ms-transition: 	all 1s;
+		-o-transition: 		all 1s;
+		transition: 		all 1s;
+	}
+	.hour-hand {
+		height: $radius * 0.6;
+		-ms-transform-origin: 	  50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
+		-webkit-transform-origin: 50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
+		transform-origin: 		  50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
+	}
+}
 
 // Navigation ==============================================================================================================
 
@@ -124,6 +219,41 @@ div#homeImage {
   top:0px;
   left:0px;
 }
+
+// Home Bulletin ==========================================================================
+.bulletin-window {
+	border: $stroke-width $stroke-colour solid;
+  background-color: $white;
+	display: inline-block;
+	height: auto;
+	width: auto;
+	position: absolute;
+	// right: 10%;
+	// bottom: 10%;
+	z-index: 100;
+  @include box-shadow(10px, 10px, 0, $clock-shadow);
+}
+
+.bulletin-window:hover {
+  cursor: move;
+}
+
+.bulletin {
+  padding: 2em;
+}
+
+#bulletin-hide {
+	position: absolute;
+	right: 0;
+	height: 2em;
+	width: 1.5em;
+
+	i {
+		font-size: 2em;
+		color: $stroke-colour;
+	}
+}
+
 
 // A-Z Filters - Categories and Tags List ==============================================================================================================
 #archives header, #archives ul, #archives section, #tags header h2, #tags ul, #categories header h2, #categories ul {
@@ -318,7 +448,7 @@ section#about h1 {
   color: $flop;
   padding: 4px;
   height: 2.1em;
-  border: 0.2rem $flip solid;
+  border: 0.2rem $flop solid;
 }
 
 .button input:hover {
@@ -332,7 +462,7 @@ input#mce-EMAIL {
   height: 2.1em;
   width: 15em;
   line-height: 1rem;
-  border: 0.2rem $flip solid;
+  border: 0.2rem $flop solid;
 }
 
 // Night Styles ==============================================================================================================
@@ -371,6 +501,9 @@ footer.footer {
   }
   #mc_embed_signup {
     padding-bottom: 2em;
+    h2 {
+      margin-bottom: .5em;
+    }
     .button input {
        background-color: $flip;
        color: $flop;
@@ -382,7 +515,7 @@ footer.footer {
        border: 0.2rem $flip solid;
      }
      input#mce-EMAIL {
-       color: $flip;
+       color: $black;
      }
   }
 }
@@ -393,106 +526,11 @@ footer.footer {
     display: inline-block;
     li {
       display: inline-block;
+      margin-bottom: 0;
         a {
           color: $flip;
           padding: .6em;
         }
     }
   }
-}
-
-// CLOCK ==============================================================================================================
-$radius: 80/16*1em;
-$stroke-width: 16/16*.18em;
-$stroke-colour: $blue;
-$clock-shadow: hsla(0, 0%, 50%, 0.65);
-
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
-  @if $inset {
-    -webkit-box-shadow:inset $top $left $blur $color;
-    -moz-box-shadow:inset $top $left $blur $color;
-    box-shadow:inset $top $left $blur $color;
-  } @else {
-    -webkit-box-shadow: $top $left $blur $color;
-    -moz-box-shadow: $top $left $blur $color;
-    box-shadow: $top $left $blur $color;
-  }
-}
-
-.clock-window {
-	border: $stroke-width $stroke-colour solid;
-  background-color: $white;
-	display: inline-block;
-	height: $radius*2.55;
-	width: $radius*2.55;
-	position: absolute;
-	// right: 10%;
-	// bottom: 10%;
-	z-index: 100;
-  @include box-shadow(10px, 10px, 0, $clock-shadow);
-}
-
-.clock-window:hover {
-  cursor: move;
-}
-
-#clock-hide {
-	position: absolute;
-	right: 0;
-	height: 2em;
-	width: 1.5em;
-
-	i {
-		font-size: 2em;
-		color: $stroke-colour;
-	}
-}
-
-.clock {
-	margin: $radius/4;
-	padding: 0;
-	text-align: left;
-	text-indent: -999px;
-	position: relative;
-	overflow: hidden;
-	display: inline-block; *display:inline; zoom:1;
-	height: $radius * 2;
-	width: $radius * 2;
-	border: $stroke-width solid $stroke-colour;
-	border-radius: $radius + $stroke-width * 2;
-	background: $white url(http://www.evening-class.org/ec-clock.svg) no-repeat center;
-	background-size: 88%;
-
-	i {
-		font-style: normal;
-	}
-
-	.hour-hand,
-	.minute-hand {
-		position: absolute;
-		bottom: $radius - $stroke-width / 2;
-		left: $radius - $stroke-width / 2; //50%;
-
-		content: "";
-		background: $stroke-colour;
-		border-radius: $stroke-width;
-		width: $stroke-width;
-		height: $radius * 0.9;
-
-		-ms-transform-origin: 	  50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
-		-webkit-transform-origin: 50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
-		transform-origin: 		  50% ( $radius * 0.9 ) - ( $stroke-width / 2 );
-
-  -webkit-transition: all 1s;
-		-moz-transition: 	all 1s;
-		-ms-transition: 	all 1s;
-		-o-transition: 		all 1s;
-		transition: 		all 1s;
-	}
-	.hour-hand {
-		height: $radius * 0.6;
-		-ms-transform-origin: 	  50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
-		-webkit-transform-origin: 50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
-		transform-origin: 		  50% ( $radius * 0.6 ) - ( $stroke-width / 2 );
-	}
 }
