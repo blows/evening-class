@@ -38,7 +38,8 @@
 
   <noscript><link href="/evening-class/assets/css/day.css" rel="stylesheet"></noscript>
   </script>
-  <!-- for development '/eveningclass/assets/css/day.css' but for uploads just '/assets/css/night.css' for live uploads  -->
+  <!-- for development '/evening-class/assets/css/day.css' but for uploads just '/assets/css/night.css' for live uploads
+  - otherwise certain pages don't look for styelsheetsin the right place - why is this happening, what am I missing? -->
 
 
   </head>
