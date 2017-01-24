@@ -13,7 +13,7 @@ $(function() {
                     $('.footer').show();
                 }
 
-                console.log("data.more is " + data.more);
+                // console.log("data.more is " + data.more);
 
                 var $container = $('#posts').packery({ itemSelector: '.item' });
                 var $html = $(data.html);
@@ -31,12 +31,12 @@ $(function() {
 
                 // Fix from second last comment here:
                 // https://github.com/metafizzy/packery/issues/245
-                // $container.append($html);
-                // $container.imagesLoaded(function() {
-                //     $container.packery('appended', $html);
-                //     // Show the new html content after it's been placed by packery
-                //     $html.css('opacity', 1);
-                // });
+                $container.append($html);
+                $container.imagesLoaded(function() {
+                    element.packery('appended', $html);
+                    // Show the new html content after it's been placed by packery
+                    $html.css('opacity', 1);
+                });
 
                 offset += limit;
             });
