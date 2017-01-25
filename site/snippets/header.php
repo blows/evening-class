@@ -23,20 +23,20 @@
   function getStylesheet() {
         var currentTime = new Date().getHours();
         if (0 <= currentTime&&currentTime < 7) {
-         document.write("<link rel='stylesheet' href='/evening-class/assets/css/night.css' type='text/css'>");
+         document.write('<?php echo css('/assets/css/night.css') ?>');
         }
         if (7 <= currentTime&&currentTime < 19) {
-         document.write("<link rel='stylesheet' href='/evening-class/assets/css/day.css' type='text/css'>");
+         document.write('<?php echo css('/assets/css/day.css') ?>');
         }
         if (19 <= currentTime&&currentTime <= 24) {
-         document.write("<link rel='stylesheet' href='/evening-class/assets/css/night.css' type='text/css'>");
+         document.write('<?php echo css('/assets/css/night.css') ?>');
         }
   }
   getStylesheet();
 
   </script>
 
-  <noscript><link href="/evening-class/assets/css/day.css" rel="stylesheet"></noscript>
+  <noscript><!-- <link href="/evening-class/assets/css/day.css" rel="stylesheet"> --><?php echo css('/assets/css/day.css') ?></noscript>
   </script>
   <!-- for development '/evening-class/assets/css/day.css' but for uploads just '/assets/css/night.css' for live uploads
   - otherwise certain pages don't look for styelsheetsin the right place - why is this happening, what am I missing? -->

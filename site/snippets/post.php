@@ -1,4 +1,5 @@
-<article class="item">
+<?php $dimensions = $post->image()->dimensions(); ?>
+<article class="item" width="<?php echo $dimensions->width(); ?>" height="<?php echo $dimensions->height(); ?>">
   <header>
     <h2>
       <?php echo ucwords($post->category()->text()) ?>
