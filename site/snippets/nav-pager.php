@@ -2,19 +2,19 @@
   <ul>
       <?php if($post->hasNextVisible()): ?>
         <li id="next-post">
-          <i class="ion-ios-arrow-thin-left"></i> Previous:
           <a href="<?= $post->nextVisible()->url() ?>">
-            <?= ucwords($post->nextVisible()->title()->html()) ?>
+            <i class="ion-ios-arrow-thin-left"></i> Previous
+            <!-- <?= ucwords($post->nextVisible()->title()->html()) ?> -->
           </a>
         </li>
       <?php endif ?>
 
       <?php if($post->hasPrevVisible()): ?>
         <li id="previous-post">
-          Next:
           <a href="<?= $post->prevVisible()->url() ?>">
-            <?= ucwords($post->prevVisible()->title()->html()) ?>
-          </a> <i class="ion-ios-arrow-thin-right"></i>
+            <!-- <?= ucwords($post->prevVisible()->title()->html()) ?> -->
+          Next <i class="ion-ios-arrow-thin-right"></i>
+          </a>
         </li>
       <?php endif ?>
   </ul>
