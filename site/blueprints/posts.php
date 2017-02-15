@@ -1,6 +1,12 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Posts
+options:
+  preview: true
+  status: false
+  template: false
+  url: false
+  delete: false
 pages:
   template: post
   num: date

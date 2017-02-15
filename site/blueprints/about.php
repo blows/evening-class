@@ -1,8 +1,14 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Page
-pages: true
-files: true
+options:
+  preview: true
+  status: false
+  template: false
+  url: false
+  delete: false
+pages: false
+files: false
 fields:
   title:
     label: Title
